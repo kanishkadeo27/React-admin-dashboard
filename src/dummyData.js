@@ -343,3 +343,19 @@ export const productRows = [
     },
 
 ];
+
+
+export const productData = [
+    {
+        name: 'Jan',
+        Sales: 10000
+    },
+    {
+        name: 'Feb',
+        Sales: 15000
+    },
+    {
+        name: 'Mar',
+        Sales: 20000
+    }
+];
