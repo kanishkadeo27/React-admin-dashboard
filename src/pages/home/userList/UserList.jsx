@@ -4,6 +4,7 @@ import { DataGrid } from '@mui/x-data-grid';
 import { userRows } from './../../../dummyData';
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import User from "../userPage/User";
 
 
 
@@ -34,7 +35,7 @@ const UserList = () => {
             field: 'action', headerName: 'Action ', width: 150, renderCell: (params) => {
                 return (
                     <div className="userListIcons">
-                        <Link to={'/users/' + params.row.id} className="usersLink" >
+                        <Link to={'/users/' + params.row.id} className="usersLink" element={<User id={params.row.id}/>} >
                             <Edit className="userListIconEdit" />
                         </Link>
                         <DeleteOutline className="userListIconDelete" onClick={() => handleDelete(params.row.id)} />
