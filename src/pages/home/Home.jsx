@@ -4,7 +4,6 @@ import './home.css'
 import { userData } from './../../dummyData';
 import WidgetSmall from '../../Components/widgetsSmall/WidgetSmall';
 import WidgetLarge from '../../Components/widgetsLarge/WidgetLarge';
-import UserList from './userList/UserList';
 
 const Home = () => {
   return (
